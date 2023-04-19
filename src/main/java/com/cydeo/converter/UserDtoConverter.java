@@ -23,7 +23,7 @@ public class UserDtoConverter implements Converter<String, UserDTO> {
             return null;
         }
 
-        return userService.findByUserNAme(source);
+        return userService.findByUserName(source);
 
     }
 
