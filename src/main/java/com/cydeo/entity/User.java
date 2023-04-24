@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
-@Where(clause = "is_deleted=false")
+@Where(clause = "is_deleted=false") // any method, queries including JpaRepository, has that condition WHERE is_deleted = false
 public class User extends BaseEntity {
 
     private String firstName;
